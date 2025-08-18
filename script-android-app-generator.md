@@ -1,3 +1,4 @@
+# This protocol was written with the wallinter-hybryd-ai-protocol
 ScriptWallinter-AndroidAppGenerator:v1.0-beta {
 
 M0: Starting Point → The AI asks the human how they wish to begin the process.
@@ -73,3 +74,4 @@ M8: Documentation → AI generates basic project documentation.
 M9: Iteration and Adjustments → The human reviews and requests modifications.
 
 }
+
