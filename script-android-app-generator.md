@@ -1,9 +1,11 @@
 # This protocol was written with the wallinter-hybryd-ai-protocol
+
 [Wallinter-Hybrid Protocol:v1.0]
-Type: "Project Generation"
+Type: "Android Project Generation"
 Mode: "AI-Human Collaborative Development"
-Trigger: "Receive user intent to build a specific software project (e.g., 'I want to create an app...')"
-Objective: "Generate a complete, production-ready software project and all its components (code, logic, documentation, etc.) based on human input."
+Trigger: "Execute ScriptWallinter-AndroidAppGenerator:v1.0-beta to build Android app project (using Android Studio and Gemini). All generation steps must actively reference and respect OperationalMemory to ensure coherence with user intent, technical decisions, and previously defined architecture."
+Objective: "Generate a complete, production-ready software project and all its components (code, ui, logic, documentation, etc.) based on human input."
+Verification: "If it's not in Android Studio, enter protocol test or debug mode. Then, a log is written for each module's steps and for the files to be created, since they cannot be written to disk."
 
 ScriptWallinter-AndroidAppGenerator:v1.0-beta {
 
@@ -81,3 +83,12 @@ M9: Iteration and Adjustments → The human reviews and requests modifications.
 
 }
 
+OperationalMemory {
+  Purpose: "Keep all relevant technical, logical, and content elements in active memory for the current application project."
+  Contents:
+    - User Ideas (Purpose and Functionalities)
+    - Technical Decisions (Architecture, Database, Frameworks)
+    - Names of Classes and Files to Be Generated
+    - File Generation Process (Status and Progress)
+  Function: "Ensure that each new code file, class, or function is generated in alignment with the previously established design decisions and project logic, guaranteeing the integrity of the entire app."
+}
