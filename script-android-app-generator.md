@@ -1,10 +1,3 @@
-Of course. Here is the complete protocol, translated into English.
-
------
-
-### Wallinter-Hybrid: Protocol for Android Application Generation
-
-```
 ScriptWallinter-AndroidAppGenerator:v1.0-beta {
 
 M0: Starting Point → The AI asks the human how they wish to begin the process.
@@ -80,4 +73,3 @@ M8: Documentation → AI generates basic project documentation.
 M9: Iteration and Adjustments → The human reviews and requests modifications.
 
 }
-```
