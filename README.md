@@ -10,7 +10,7 @@ Claro. Aquí está el texto que proporcionaste, convertido al formato Markdown e
 
 ### How It Works
 
-The protocol is based on a series of **sequential and conditional modules**. The human defines the strategic and creative framework, while the AI assists in breaking down tasks, organizing information, and suggesting options.
+The protocol is based on a series of **sequential and conditional modules**. The human defines the strategic and creative framework, while the AI assists in breaking down tasks, organizing information, and suggesting options. Simply copy and paste the complete protocol into the chat to start the workflow.
 
 * **Activation:** The protocol starts by recognizing its structure and directives.
 * **Prerequisites:** Initial planning modules (Identity, Terrain, etc.) are completed.
