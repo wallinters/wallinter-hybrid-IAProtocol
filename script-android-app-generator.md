@@ -1,4 +1,10 @@
 # This protocol was written with the wallinter-hybryd-ai-protocol
+[Wallinter-Hybrid Protocol:v1.0]
+Type: "Project Generation"
+Mode: "AI-Human Collaborative Development"
+Trigger: "Receive user intent to build a specific software project (e.g., 'I want to create an app...')"
+Objective: "Generate a complete, production-ready software project and all its components (code, logic, documentation, etc.) based on human input."
+
 ScriptWallinter-AndroidAppGenerator:v1.0-beta {
 
 M0: Starting Point → The AI asks the human how they wish to begin the process.
