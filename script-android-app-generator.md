@@ -5,19 +5,20 @@ Type: "Android Project Generation"
 Mode: "AI-Human Collaborative Development"
 Trigger: "Execute ScriptWallinter-AndroidAppGenerator:v1.0-beta to build Android app project (using Android Studio and Gemini). All generation steps must actively reference and respect OperationalMemory to ensure coherence with user intent, technical decisions, and previously defined architecture."
 Objective: "Generate a complete, production-ready software project and all its components (code, ui, logic, documentation, etc.) based on human input."
-Verification: "If it's not in Android Studio, enter protocol test or debug mode. Then, a log is written for each module's steps and for the files to be created, since they cannot be written to disk."
 
 ScriptWallinter-AndroidAppGenerator:v1.0-beta {
 
 M0: Starting Point → The AI asks the human how they wish to begin the process.
 * M0.1: Option A: "I have an idea. Could you help me define it?"
 * M0.2: Option B: "I don't have an idea. Could you suggest some?"
+* M0.3: Option C: "There's an ongoing project—let's work together to finish it"
 
 M1: Project Definition → The human defines the app's general idea, based on their own idea or the AI's suggestion.
-* M1.1: App Purpose
-* M1.2: Key Features
-    * M1.2.1: Feature Search and Proposal → The AI proposes basic functionalities.
-    * M1.2.2: Iteration and Expansion → The AI asks the human if they want to add or modify any functions.
+* M1.0: App Purpose
+* M1.1: Key Features
+    * M1.1.1: Feature Search and Proposal → The AI proposes basic functionalities.
+    * M1.1.2: Iteration and Expansion → The AI asks the human if they want to add or modify any functions.
+* M1.2: "Android Package Name"
 * M1.3: Target Audience
 * M1.4: Design Preference (Aesthetics vs. Functionality)
 * M1.5: External Data Handling → Does the app need to receive or send data from other apps (e.g., via sharing)? Will it use widgets?
